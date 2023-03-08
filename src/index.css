@@ -24,6 +24,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 30px 0;
 }
 
 .header h1 {
@@ -31,6 +32,7 @@ body {
 }
 
 .header button {
+  padding: 10px 20px;
 }
 
 .list {
@@ -43,6 +45,7 @@ body {
   background-color: #fff;
   padding: 20px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
 }
 
 .note h4 {
@@ -52,9 +55,20 @@ body {
 
 .note p {
   min-height: 160px;
+  font-size: 15px;
 }
 
 .note .bottom {
   display: flex;
   align-items: center;
+}
+
+.note .bottom .date {
+  margin-right: auto;
+  font-size: 14px;
+  color: #666;
+}
+
+.note .bottom button {
+  margin: 0 6px;
 }

@@ -10,7 +10,9 @@ export default function Note({ note }) {
   const date = moment(note.date.toDate()).format('YYYY-MM-D h:mm')
 
   async function onDelete() {
-    await deleteDoc(doc(db, 'notes', 'note.id'))
+    if (window.confirm('정말 삭제하시겠습니까')) {
+      await deleteDoc(doc(db, 'notes', note.id))
+    }
   }
 
   return (
